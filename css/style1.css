@@ -6,39 +6,55 @@
 }
 
 /* 比較表 */
-.comparison-table {
+.comparison {
     background-color: var(--bg-darkblue);
     color: white;
     border-radius: 15px;
-    max-width: 1100px;
+    max-width: 1200px;
 }
+/* 横スクロール */
 .tbl-wrap {
-    overflow-x: scroll;
-
+    width:100%;
+    overflow-x:scroll;
 }
 /* テーブル */
 .tbl {
     width: 100%;
-    table-layout: fixed;
-    min-width: 700px;
+    table-layout: auto;
+    min-width: 800px;
+    margin-top: 2rem;
+    border-collapse: collapse;
 }
-
+/* 枠線 */
 .tbl thead {
     border-bottom: 2px #fff solid;
 }
-
 .tbl tr {
     border-bottom: 1px #fff solid;
 }
-
 .tbl tr:last-child {
     border-bottom: none;
 }
+/* レイアウト */
+.tbl thead th{
+    vertical-align: middle;
+}
+.tbl td,
+.tbl th {
+    vertical-align: middle;
+    text-align:left;
+    text-align: left;
+    padding: 1rem;  
+}
+.tbl th {
+    text-wrap: nowrap;
+}
 
 /* Recursionの背景 */
-.recursion-info {
+.recursion {
     background-color: var(--bg-lightblue);
     color: var(--bg-darkblue);
+    position: relative;
 }
 
 .recursion-top {
@@ -47,16 +63,13 @@
 
 .recursion-bottom {
     border-radius: 0 0 15px 15px;
+    padding-bottom: 2rem;
 }
 /* バッジ */
-.badge-img {
+.badge-image {
     position: absolute;
-    top: -30px;
+    top: -40px;
     right: 25px;
-    z-index: 1;
+    z-index: 3;
 }
 
-/* レスポンシブ 項目ごとに縦並び*/
-@media screen and (max-width: 768px) {
-
-}

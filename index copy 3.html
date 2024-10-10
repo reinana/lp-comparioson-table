@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Comparison Table</title>
+</head>
+<body>
+    <div class="comparison-table p-3 m-auto">
+        <h2 class="text-center font-weight-bold mb-4">Recursionと他サービスの内容を比較</h2>
+        <div class="d-md-flex position-relative">
+            <!-- 左の項目：大画面で表示、スマホでは非表示 -->
+            <div class="title-container w-25 d-none d-lg-block p-0">
+                <div class="title-wrapper d-flex align-items-stretch h-100">
+                    <div class="title d-flex flex-column h-100">
+                        <div class="school-header"><h4></h4></div>
+                        <table class="text-white h-100">
+                            <tr><td>受講料金</td></tr>
+                            <tr><td>カリキュラム</td></tr>
+                            <tr><td>チーム開発</td></tr>
+                            <tr><td>学べるスキル</td></tr>
+                            <tr><td>転職サポート</td></tr>
+                            <tr><td>質問への対応時間</td></tr>
+                            <tr><td>期間</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- スライダーコンテナ -->
+            <div class="slider-container">
+                <div class="slides-wrapper h-100">
+                    <!-- 各スクールのスライド -->
+                    <!-- Aスクール -->
+                    <div class="slide col-md">
+                        <div class="school-header"><p class="m-auto">Aスクール</p></div>
+                        <table class="text-white h-100">
+                            <tr><th>受講料金</th><td>55万～</td></tr>
+                            <tr><th>カリキュラム</th><td>プログラミング未経験者でも継続可能なカリキュラム</td></tr>
+                            <tr><th>チーム開発</th><td>なし</td></tr>
+                            <tr><th>学べるスキル</th><td>HTML / CSS / Ruby / JavaScript / MySQL / Git / Linux / Docker など</td></tr>
+                            <tr><th>転職サポート</th><td>キャリアアドバイザーとの面談</td></tr>
+                            <tr><th>質問への対応時間</th><td>平日11時〜22時</td></tr>
+                            <tr><th>期間</th><td>9カ月～</td></tr>
+                        </table>
+                    </div>
+
+                    <!-- Bスクール -->
+                    <div class="slide col-lg">
+                        <div class="school-header"><p class="m-auto">Bスクール</p></div>
+                        <table class="text-white h-100">
+                            <tr><th>受講料金</th><td>55万～</td></tr>
+                            <tr><th>カリキュラム</th><td>受講生に合わせて専属講師が教材を選定</td></tr>
+                            <tr><th>チーム開発</th><td>なし</td></tr>
+                            <tr><th>学べるスキル</th><td>HTML / CSS / JavaScript / MySQL / Laravel / Git など</td></tr>
+                            <tr><th>転職サポート</th><td>キャリアアドバイザーとの面談</td></tr>
+                            <tr><th>質問への対応時間</th><td>24時間掲示板へ書込みできるが、1営業日以上回答がこないことも</td></tr>
+                            <tr><th>期間</th><td>16週～</td></tr>
+                        </table>
+                    </div>
+
+                    <!-- Cスクール -->
+                    <div class="slide col-lg">
+                        <div class="school-header"><p class="m-auto">Cスクール</p></div>
+                        <table class="text-white h-100">
+                            <tr><th>受講料金</th><td>69万～</td></tr>
+                            <tr><th>カリキュラム</th><td>HTMLやCSSなど基礎学習後はポートフォリオを作成</td></tr>
+                            <tr><th>チーム開発</th><td>3週間でECサイト1つを制作する</td></tr>
+                            <tr><th>学べるスキル</th><td>特定の言語、フレームワークのみの習得</td></tr>
+                            <tr><th>転職サポート</th><td>キャリアアドバイザーとの面談</td></tr>
+                            <tr><th>質問への対応時間</th><td>平日13時〜22時</td></tr>
+                            <tr><th>期間</th><td>16週～</td></tr>
+                        </table>
+                    </div>
+
+                    <!-- Recursion -->
+                    <div class="slide recursion-info col-lg-4 m-0">
+                        <div class="school-header">
+                            <img src="image/25671661.png" height="100px" width="100px" class="d-lg-none"/>
+                            <img src="image/recursion-logo.png" height="80px">
+                        </div>
+                        <table class="h-100">
+                            <tr><th>受講料金</th><td>月額 <span class="font-weight-bold" style="font-size:x-large;">49</span>ドル（年額プランの場合）</td></tr>
+                            <tr><th>カリキュラム</th>
+                                <td>
+                                    <ul>
+                                        <li><span class="font-weight-bold">元Metaエンジニア</span>監修 アメリカCS学部のカリキュラムに準拠</li>
+                                        <li>コンピュータサイエンスを基礎から体系的に学習</li>
+                                        <li>ポートフォリオとして利用可能な個人開発課題は100以上</li>
+                                    </ul>
+                                    <span class="font-weight-bold">バックエンドエンジニアに特化した長期スキルを習得するカリキュラム</span>
+                                </td>
+                            </tr>
+                            <tr><th>チーム開発</th><td>初心者用～バックエンドエンジニア用まで複数回参加可能</td></tr>
+                            <tr><th>学べるスキル</th><td>コンピュータサイエンス / フロントエンド / バックエンド / OOP / アルゴリズム / データベース / ネットワーク / ソフトウェア開発 / サーバ / クラウドなど</td></tr>
+                            <tr><th>転職サポート</th><td>元Metaエンジニアによるスキル診断と個別相談履歴書、職務経歴書の添削、キャリア相談など手厚いサポートあり</td></tr>
+                            <tr><th>質問への対応時間</th><td>平日13時〜22時</td></tr>
+                            <tr><th>期間</th><td>サブスクなので1カ月～ いつでも停止再開可能</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- ナビゲーションボタン（小画面用） -->
+                <button class="slider-btn prev">◀</button>
+                <button class="slider-btn next">▶</button>
+            </div>
+            <img src="image/25671661.png" height="100px" width="100px" class="badge-img d-none d-lg-block"/>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

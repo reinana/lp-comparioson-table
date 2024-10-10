@@ -6,11 +6,102 @@
         <!-- <link rel="stylesheet" href="/css/bootstrap.css" /> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style1.css" />
 
         <title>Comparison Table</title>
     </head>
     <body>
-        <div class="comparison-table p-3 m-auto">            
+        <!-- 比較表横スクロールここから style1.css -->
+        <div class="min-vh-100">
+            <div class="container comparison py-5">
+                <h2 class="text-center font-weight-bold mb-4">Recursionと他サービスの内容を比較</h2>
+                <div class="p-2 tbl-wrap">
+                    
+                    <table class="tbl text-white text-center" >
+                        <thead>
+                            <tr>
+                                <th class="col-1" scope="col"></th>
+                                <th class="col-2" scope="col">Aスクール</th>
+                                <th class="col-2" scope="col">Bスクール</th>
+                                <th class="col-2" scope="col">Cスクール</th>
+                                <th class="col-4 recursion-info recursion-top" scope="col">
+                                    <img src="image/25671661.png" height="100px" width="100px" class="badge-image"/>                       
+                                    <img src="image/recursion-logo.png" height="100px">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>受講料金</th>
+                                <td>55万円～</td>
+                                <td>55万円～</td>
+                                <td>69万円～</td>
+                                <td class="recursion">月額 <span class="font-weight-bold" style="font-size:x-large;">49</span>ドル（年額プランの場合）</td>
+                            </tr>
+                            <tr>
+                                <th nowrap scope="row">カリキュラム</th>
+                                <td>プログラミング未経験者でも継続可能なカリキュラム</td>
+                                <td>受講生に合わせて専属講師が教材を選定</td>
+                                <td>HTMLやCSSなど基礎学習の後は転職活動用のポートフォリオを作成</td>
+                                <td class="recursion">
+                                    <ul>
+                                        <li><span class="font-weight-bold">元Metaエンジニア</span>監修 アメリカCS学部のカリキュラムに準拠</li>
+                                        <li>コンピュータサイエンスを基礎から体系的に学習</li>
+                                        <li>ポートフォリオとして利用可能な個人開発課題は100以上</li>
+                                    </ul>
+                                    <p class="font-weight-bold">バックエンドエンジニアに特化した長期スキルを習得するカリキュラム</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th nowrap scope="row">チーム開発</th>
+                                <td>なし</td>
+                                <td>なし</td>
+                                <td>3週間でECサイト1つを制作する</td>
+                                <td class="recursion">初心者用～バックエンドエンジニア用まで複数回参加可能</td>
+                            </tr>
+                            <tr>
+                                <th nowrap scope="row">学べるスキル</th>
+                                <td>HTML, CSS, Ruby, JavaScript,  MySQL, Git, Linux, Dockerなど</td>
+                                <td>HTML, CSS, JavaScript,  MySQL, Laravel, Git など</td>
+                                <td>特定の言語、フレームワークのみの習得</td>
+                                <td class="recursion">コンピュータサイエンス, フロントエンド, バックエンド, OOP, アルゴリズム, データベース, ネットワーク, ソフトウェア開発, サーバ, クラウドなど <br><span class="font-weight-bold">トップエンジニアとして自走できるスキルを習得</span></td>
+                            </tr>
+                            <tr>
+                                <th nowrap scope="row">転職サポート</th>
+                                <td>キャリアアドバイザーとの面談（年齢制限あり）</td>
+                                <td>担当講師のキャリア相談</td>
+                                <td>キャリアアドバイザーとの面談 （年齢制限あり）</td>
+                                <td class="recursion">元Metaエンジニアによるスキル診断と個別相談履歴書、職務経歴書の添削、キャリア相談など手厚いサポートあり</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">質問への対応時間</th>
+                                <td>平日11時〜22時</td>
+                                <td>24時間掲示板へ書込みできるが、1営業日以上回答がこないことも</td>
+                                <td>13時～22時</td>
+                                <td class="recursion">質問専用チャットに24時間書込み可能 直近100件の平均回答時間は6時間</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">期間</th>
+                                <td>9カ月～</td>
+                                <td>16週～</td>
+                                <td>16週～</td>
+                                <td class="recursion recursion-bottom">サブスクなので1カ月～ いつでも停止再開可能</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                    
+            </div>
+
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+        <!-- 比較表横スクロールここまで -->
+         <hr>
+        <!-- 比較表スライダーここから -->
+        <div class="comparison-table p-3 m-auto min-vh-100">            
             <h2 class="text-center font-weight-bold mb-4">Recursionと他サービスの内容を比較</h2>
             <div class="d-md-flex position-relative">
                 <!-- 項目 スマホでは消す 大画面で表示-->
@@ -44,7 +135,7 @@
                                 <tr><th class="col-4">受講料金</th><td>55万～</td></tr>
                                 <tr><th class="col-4">カリキュラム</th><td class="h-250">プログラミング未経験者でも継続可能なカリキュラム</td></tr>
                                 <tr><th class="col-4">チーム開発</th><td>なし</td></tr>
-                                <tr><th class="col-4">学べるスキル</th><td class="h-200">HTML / CSS / Ruby / JavaScript / MySQL / Git / Linux / Docker など</td></tr>
+                                <tr><th class="col-4">学べるスキル</th><td class="h-200">HTML, CSS, Ruby, JavaScript, MySQL, Git, Linux, Docker など</td></tr>
                                 <tr><th class="col-4">転職サポート</th><td>キャリアアドバイザーとの面談</td></tr>
                                 <tr><th class="col-4">質問への対応時間</th><td>平日11時〜22時</td></tr>
                                 <tr><th class="col-4">期間</th><td>9カ月～</td></tr>
@@ -59,7 +150,7 @@
                                 <tr><th class="col-4">受講料金</th><td>55万～</td></tr>
                                 <tr><th class="col-4">カリキュラム</th><td class="h-250">受講生に合わせて専属講師が教材を選定</td></tr>
                                 <tr><th class="col-4">チーム開発</th><td>なし</td></tr>
-                                <tr><th class="col-4">学べるスキル</th><td class="h-200">HTML / CSS / JavaScript / MySQL / Laravel / Git など</td></tr>
+                                <tr><th class="col-4">学べるスキル</th><td class="h-200">HTML, CSS, JavaScript, MySQL, Laravel, Git など</td></tr>
                                 <tr><th class="col-4">転職サポート</th><td>キャリアアドバイザーとの面談</td></tr>
                                 <tr><th class="col-4">質問への対応時間</th><td>24時間掲示板へ書込みできるが、1営業日以上回答がこないことも</td></tr>
                                 <tr><th class="col-4">期間</th><td>16週～</td></tr>
@@ -87,7 +178,7 @@
                                 <img src="image/recursion-logo.png" height="80px">
                             </div>
                             <table class="h-100">
-                                <tr><th class="col-3">受講料金</th><td>月額 <span class="font-weight-bold" style="font-size:x-large;">49</span>ドル（年額プランの場合）</td></tr>
+                                <tr><th class="col-3">受講料金</th><td>月額 <span class="font-weight-bold" style="font-size:large;">49</span>ドル（年額プランの場合）</td></tr>
                                 <tr><th class="col-3">カリキュラム</th>
                                     <td class="h-250">
                                         <ul>
@@ -99,7 +190,7 @@
                                     </td>
                                 </tr>
                                 <tr><th class="col-3">チーム開発</th><td>初心者用～バックエンドエンジニア用まで複数回参加可能</td></tr>
-                                <tr><th class="col-3">学べるスキル</th><td class="h-200">コンピュータサイエンス / フロントエンド / バックエンド / OOP / アルゴリズム / データベース / ネットワーク / ソフトウェア開発 / サーバ / クラウドなど</p>
+                                <tr><th class="col-3">学べるスキル</th><td class="h-200">コンピュータサイエンス, フロントエンド, バックエンド, OOP, アルゴリズム, データベース, ネットワーク, ソフトウェア開発, サーバ, クラウドなど</p>
                                     <span class="font-weight-bold">トップエンジニアとして自走できるスキルを習得</td></tr>
                                 <tr><th class="col-3">転職サポート</th><td>元Metaエンジニアによるスキル診断と個別相談履歴書、職務経歴書の添削、キャリア相談など手厚いサポートあり</td></tr>
                                 <tr><th class="col-3">質問への対応時間</th><td>平日13時〜22時</td></tr>
@@ -114,6 +205,8 @@
                 <img src="image/25671661.png" height="100px" width="100px" class="badge-img d-none d-lg-block"/>
             </div>
         </div>
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+        <!-- 比較表スライダーここまで -->
+
     </body>
 </html>
