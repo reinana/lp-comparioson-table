@@ -1,0 +1,143 @@
+:root {
+    --lightpurple: #dbddff;
+    --bg-darkblue: #2b3a55;
+    --bg-lightblue: #e0f0ff;
+    --bg-lightgray: #f8f8f8;
+}
+body {
+    font-family: "Noto Sans JP", Lato;
+}
+
+/* 比較表背景 */
+.comparison-table {
+    background-color: var(--bg-darkblue);
+    color: white;
+    border-radius: 15px;
+    max-width: 1200px;
+}
+/* テーブルのスタイルと枠線 */
+td,
+th {
+    text-align: left;
+    height: 100px;
+    vertical-align: middle;
+    border-bottom: 1px #fff solid;
+}
+/* 一番最後のラインを消す */
+table tr:last-child td,
+table tr:last-child th {
+    border-bottom: none;
+}
+
+/* スライダー全体のスタイル */
+.slider-container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* スライドの表示領域 */
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: stretch;
+}
+
+/* 各スライドのスタイル */
+.slide {
+    min-width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.school-header {
+    height: 100px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Recursionのスタイル */
+.recursion-info {
+    background-color: var(--bg-lightblue);
+    color: var(--bg-darkblue);
+    border-radius: 15px;   
+}
+/* バッジ */
+.badge-img {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    z-index: 3;
+}
+
+/* ナビゲーションボタン */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--lightpurple);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.slider-btn:hover {
+    opacity: 1;
+}
+
+.slider-btn.prev {
+    left: 1rem;
+}
+
+.slider-btn.next {
+    right: 1rem;
+}
+
+/* 大きな画面の場合の設定 */
+@media (min-width: 992px) {
+    /* tdの高さ固定 */
+    .h-200 {
+        height: 200px;
+    }
+    .h-250 {
+        height: 250px;
+    }
+    /* 大画面では左の項目は非表示 */
+    .slide th {
+        display: none;
+    }
+    .slide td,
+    .title td {
+        text-align: center;
+        vertical-align: middle;
+        padding-left: 1rem;
+    }
+    .title td {
+        font-weight: bold;
+    }
+    .slides-wrapper {
+        justify-content: space-between;
+        transform: none; /* 大きな画面ではスライド移動を無効化 */   
+    }
+    /* 各スライドの横幅固定 */
+    .slide {
+        min-width: 100px;
+        padding: 0;
+    }
+
+    /* 大画面時はボタンを非表示 */
+    .slider-btn {
+        display: none; 
+    }
+
+}
+
+
+
